@@ -8,7 +8,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class Police {
     public boolean checkDriver(Driver driver) {
-        if(driver.getAge() >= 18) return true;
+        int adultAgeThreshold = 18;
+        if(driver.getAge() >= adultAgeThreshold) return true;
         else return false;
     }
 
